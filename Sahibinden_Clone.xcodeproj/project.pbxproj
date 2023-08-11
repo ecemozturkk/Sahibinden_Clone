@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		522B0B832A86A41000680D2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B0B822A86A41000680D2A /* AppDelegate.swift */; };
 		522B0B852A86A41000680D2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B0B842A86A41000680D2A /* SceneDelegate.swift */; };
-		522B0B872A86A41000680D2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B0B862A86A41000680D2A /* ViewController.swift */; };
 		522B0B8A2A86A41000680D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522B0B882A86A41000680D2A /* Main.storyboard */; };
 		522B0B8C2A86A41200680D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522B0B8B2A86A41200680D2A /* Assets.xcassets */; };
 		522B0B8F2A86A41200680D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522B0B8D2A86A41200680D2A /* LaunchScreen.storyboard */; };
+		522B0B972A86D71F00680D2A /* VitrinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B0B962A86D71F00680D2A /* VitrinViewController.swift */; };
+		522B0B992A86D74400680D2A /* AramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B0B982A86D74400680D2A /* AramaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		522B0B7F2A86A41000680D2A /* Sahibinden_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sahibinden_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		522B0B822A86A41000680D2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		522B0B842A86A41000680D2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		522B0B862A86A41000680D2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		522B0B892A86A41000680D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		522B0B8B2A86A41200680D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522B0B8E2A86A41200680D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522B0B902A86A41200680D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522B0B962A86D71F00680D2A /* VitrinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitrinViewController.swift; sourceTree = "<group>"; };
+		522B0B982A86D74400680D2A /* AramaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AramaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				522B0B822A86A41000680D2A /* AppDelegate.swift */,
 				522B0B842A86A41000680D2A /* SceneDelegate.swift */,
-				522B0B862A86A41000680D2A /* ViewController.swift */,
+				522B0B962A86D71F00680D2A /* VitrinViewController.swift */,
+				522B0B982A86D74400680D2A /* AramaViewController.swift */,
 				522B0B882A86A41000680D2A /* Main.storyboard */,
 				522B0B8B2A86A41200680D2A /* Assets.xcassets */,
 				522B0B8D2A86A41200680D2A /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522B0B872A86A41000680D2A /* ViewController.swift in Sources */,
 				522B0B832A86A41000680D2A /* AppDelegate.swift in Sources */,
+				522B0B992A86D74400680D2A /* AramaViewController.swift in Sources */,
 				522B0B852A86A41000680D2A /* SceneDelegate.swift in Sources */,
+				522B0B972A86D71F00680D2A /* VitrinViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
