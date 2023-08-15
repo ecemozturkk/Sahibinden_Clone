@@ -6,6 +6,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -291,6 +292,56 @@
                                     <constraint firstAttribute="height" constant="25" id="kAo-gi-iql"/>
                                 </constraints>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pIv-YR-7TX">
+                                <rect key="frame" x="0.0" y="110" width="414" height="703"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1ps-mM-u8f">
+                                    <size key="itemSize" width="198" height="153"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="1Hb-X9-qD8" customClass="VitrinCollectionViewCell" customModule="Sahibinden_Clone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="198" height="153"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NKc-zQ-Dfw">
+                                            <rect key="frame" x="0.0" y="0.0" width="198" height="153"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="araba" translatesAutoresizingMaskIntoConstraints="NO" id="keD-KJ-c2Q">
+                                                    <rect key="frame" x="0.0" y="0.0" width="198" height="122"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="122" id="6PN-Lt-3UU"/>
+                                                        <constraint firstAttribute="width" constant="197" id="dwD-G2-yHF"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARABA ARABA ARABA ARABA ARABA ARABA ARABA ARABA ARABA ARABA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrJ-8M-urg">
+                                                    <rect key="frame" x="1" y="130" width="196" height="15"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="keD-KJ-c2Q" firstAttribute="top" secondItem="NKc-zQ-Dfw" secondAttribute="top" id="7OA-dJ-6Fe"/>
+                                                <constraint firstAttribute="trailing" secondItem="keD-KJ-c2Q" secondAttribute="trailing" id="HFv-dY-c4t"/>
+                                                <constraint firstItem="keD-KJ-c2Q" firstAttribute="leading" secondItem="NKc-zQ-Dfw" secondAttribute="leading" id="aQR-bq-XrV"/>
+                                                <constraint firstAttribute="trailing" secondItem="KrJ-8M-urg" secondAttribute="trailing" constant="1" id="fFy-cT-knP"/>
+                                                <constraint firstItem="KrJ-8M-urg" firstAttribute="leading" secondItem="NKc-zQ-Dfw" secondAttribute="leading" constant="1" id="tQJ-T3-fLd"/>
+                                                <constraint firstItem="KrJ-8M-urg" firstAttribute="top" secondItem="keD-KJ-c2Q" secondAttribute="bottom" constant="8" id="zYu-eB-nCY"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="198" height="153"/>
+                                        <connections>
+                                            <outlet property="vitrinImg" destination="keD-KJ-c2Q" id="TlS-2J-yId"/>
+                                            <outlet property="vitrinLbl" destination="KrJ-8M-urg" id="dvv-c2-D7z"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iPd-pM-fF2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -301,22 +352,30 @@
                             <constraint firstAttribute="trailing" secondItem="qeS-NQ-I4E" secondAttribute="trailing" constant="20" id="KOF-J3-f0W"/>
                             <constraint firstItem="vpx-SV-ZDo" firstAttribute="top" secondItem="aVQ-Pf-K7P" secondAttribute="top" constant="55" id="OsE-7P-nc0"/>
                             <constraint firstItem="vZZ-Db-h0N" firstAttribute="trailing" secondItem="iPd-pM-fF2" secondAttribute="trailing" id="UbM-Xh-wQ6"/>
+                            <constraint firstItem="pIv-YR-7TX" firstAttribute="top" secondItem="vZZ-Db-h0N" secondAttribute="bottom" constant="10" id="VDh-Ec-hlE"/>
                             <constraint firstItem="vpx-SV-ZDo" firstAttribute="leading" secondItem="aVQ-Pf-K7P" secondAttribute="leading" constant="20" id="aJv-LK-cc6"/>
                             <constraint firstItem="vZZ-Db-h0N" firstAttribute="trailing" secondItem="iPd-pM-fF2" secondAttribute="trailing" id="fIP-TS-UEL"/>
+                            <constraint firstItem="pIv-YR-7TX" firstAttribute="leading" secondItem="iPd-pM-fF2" secondAttribute="leading" id="ffq-Em-eav"/>
+                            <constraint firstItem="pIv-YR-7TX" firstAttribute="bottom" secondItem="iPd-pM-fF2" secondAttribute="bottom" id="jZo-lx-T8R"/>
                             <constraint firstItem="vZZ-Db-h0N" firstAttribute="top" secondItem="aVQ-Pf-K7P" secondAttribute="top" id="l1G-pU-dFY"/>
                             <constraint firstItem="qeS-NQ-I4E" firstAttribute="top" secondItem="aVQ-Pf-K7P" secondAttribute="top" constant="60" id="l4e-K6-Pq4"/>
                             <constraint firstItem="vZZ-Db-h0N" firstAttribute="leading" secondItem="iPd-pM-fF2" secondAttribute="leading" id="nma-SL-fgf"/>
                             <constraint firstItem="vZZ-Db-h0N" firstAttribute="leading" secondItem="iPd-pM-fF2" secondAttribute="leading" id="u4S-Ve-lxx"/>
+                            <constraint firstItem="iPd-pM-fF2" firstAttribute="trailing" secondItem="pIv-YR-7TX" secondAttribute="trailing" id="vvd-lL-eXh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wnf-AT-Xvk"/>
+                    <connections>
+                        <outlet property="vitrinCollectionView" destination="pIv-YR-7TX" id="FUg-sN-cvi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWk-Ad-az0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="386" y="-563"/>
+            <point key="canvasLocation" x="385.50724637681162" y="-563.16964285714278"/>
         </scene>
     </scenes>
     <resources>
+        <image name="araba" width="821" height="612"/>
         <image name="arrow.counterclockwise" catalog="system" width="113" height="128"/>
         <image name="banner" width="572" height="340"/>
         <image name="logo" width="1024" height="1024"/>
@@ -325,13 +384,13 @@
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
         <namedColor name="selectedItem">
-            <color red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.21199999749660492" green="0.21199999749660492" blue="0.21199999749660492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="themeBlue">
             <color red="0.18199999630451202" green="0.36399999260902405" blue="0.55299997329711914" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="unselectedItem">
-            <color red="0.6588235294117647" green="0.6588235294117647" blue="0.6588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.6589999794960022" green="0.6589999794960022" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
