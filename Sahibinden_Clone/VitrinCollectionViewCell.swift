@@ -12,5 +12,4 @@ class VitrinCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var vitrinImg: UIImageView!
     @IBOutlet weak var vitrinLbl: UILabel!
 
-    
 }

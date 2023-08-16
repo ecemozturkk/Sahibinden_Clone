@@ -19,9 +19,11 @@ class VitrinViewController: UIViewController {
         vitrinCollectionView.dataSource = self
         vitrinCollectionView.delegate = self
         
+        vitrinCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        
         let v1 = vitrinModel(vitrinImg: "araba", vitrinLbl: "ARABA ARABA ARABA ARABA ARABA ARABA ARABA ARABA")
         let v2 = vitrinModel(vitrinImg: "bahce", vitrinLbl: "ARABA ARABA ARABA ARABA")
-        let v3 = vitrinModel(vitrinImg: "araba", vitrinLbl: "ARABA ARABA ARABA ARABA")
+        let v3 = vitrinModel(vitrinImg: "reno", vitrinLbl: "Cardwind Renault Clio 1.2 Turbı Icon")
         let v4 = vitrinModel(vitrinImg: "araba", vitrinLbl: "ARABA ARABA ARABA ARABA")
         let v5 = vitrinModel(vitrinImg: "araba", vitrinLbl: "ARABA ARABA ARABA ARABA")
         let v6 = vitrinModel(vitrinImg: "araba", vitrinLbl: "ARABA ARABA ARABA ARABA")
@@ -44,21 +46,6 @@ class VitrinViewController: UIViewController {
         vitrinList.append(v10)
         vitrinList.append(v11)
         vitrinList.append(v12)
-        
-        let design = UICollectionViewFlowLayout()
-        design.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
-        design.minimumInteritemSpacing = 10
-        design.minimumLineSpacing = 10
-        
-        
-        let screenWidth = UIScreen.main.bounds.width
-        let itemWidth = (screenWidth - 40) / 2
-                
-        design.itemSize = CGSize(width: itemWidth, height: itemWidth*0.9)
-
-        vitrinCollectionView.collectionViewLayout = design
-
-
     }
 }
 
@@ -76,15 +63,14 @@ extension VitrinViewController: UICollectionViewDelegate, UICollectionViewDataSo
         cell.layer.borderColor = UIColor.lightGray.cgColor
         cell.layer.borderWidth = 0.3
         
-    
-     
-        
         return cell
     }
+}
 
-
-    
-    
+extension VitrinViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 195, height: 150)
+    }
 }
 
 
