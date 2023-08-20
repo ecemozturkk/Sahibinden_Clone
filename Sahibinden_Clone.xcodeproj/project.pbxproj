@@ -17,6 +17,8 @@
 		523B96A02A8BFAA700CDB1FE /* vitrinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B969F2A8BFAA700CDB1FE /* vitrinModel.swift */; };
 		526FB3C82A87F11D006E7FA2 /* VitrinCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FB3C72A87F11D006E7FA2 /* VitrinCollectionViewCell.swift */; };
 		529E1B012A92355600D41721 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E1B002A92355600D41721 /* TabBarViewController.swift */; };
+		529E1B032A9257C700D41721 /* AramaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E1B022A9257C700D41721 /* AramaTableViewCell.swift */; };
+		529E1B052A925C1900D41721 /* aramaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E1B042A925C1900D41721 /* aramaModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		523B969F2A8BFAA700CDB1FE /* vitrinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vitrinModel.swift; sourceTree = "<group>"; };
 		526FB3C72A87F11D006E7FA2 /* VitrinCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitrinCollectionViewCell.swift; sourceTree = "<group>"; };
 		529E1B002A92355600D41721 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		529E1B022A9257C700D41721 /* AramaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AramaTableViewCell.swift; sourceTree = "<group>"; };
+		529E1B042A925C1900D41721 /* aramaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aramaModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				522B0B902A86A41200680D2A /* Info.plist */,
 				523B969F2A8BFAA700CDB1FE /* vitrinModel.swift */,
 				529E1B002A92355600D41721 /* TabBarViewController.swift */,
+				529E1B022A9257C700D41721 /* AramaTableViewCell.swift */,
+				529E1B042A925C1900D41721 /* aramaModel.swift */,
 			);
 			path = Sahibinden_Clone;
 			sourceTree = "<group>";
@@ -150,11 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529E1B032A9257C700D41721 /* AramaTableViewCell.swift in Sources */,
 				522B0B832A86A41000680D2A /* AppDelegate.swift in Sources */,
 				522B0B992A86D74400680D2A /* AramaViewController.swift in Sources */,
 				522B0B852A86A41000680D2A /* SceneDelegate.swift in Sources */,
 				522B0B972A86D71F00680D2A /* VitrinViewController.swift in Sources */,
 				529E1B012A92355600D41721 /* TabBarViewController.swift in Sources */,
+				529E1B052A925C1900D41721 /* aramaModel.swift in Sources */,
 				526FB3C82A87F11D006E7FA2 /* VitrinCollectionViewCell.swift in Sources */,
 				523B96A02A8BFAA700CDB1FE /* vitrinModel.swift in Sources */,
 			);
